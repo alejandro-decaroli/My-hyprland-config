@@ -1,0 +1,11 @@
+{
+    "codeium.enableCodeLens": false,
+    "codeium.enableConfig": {
+        "*": true
+    },
+    "workbench.colorTheme": "2077",
+    "editor.fontFamily": "'Fira Code', 'Consolas', 'Courier New', monospace",
+    "editor.fontSize": 14, 
+    "editor.fontWeight": "normal", 
+    "editor.fontLigatures": true
+}

@@ -1,0 +1,65 @@
+#clock {
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
+    font-size: 1.4em; /* Tamaño de fuente */
+    color: #c300ff; /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    margin: 5px 10px; /* Margen */
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+}
+
+#clock:hover {
+    color: black;
+    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
+}
+
+
+#cpu {
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #fbff00; /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    margin: 5px 10px; /* Margen */
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+}
+
+#cpu:hover {
+    color: black;
+    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
+}
+
+#memory {
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #fbff00; /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    margin: 5px 10px; /* Margen */
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+}
+
+#memory:hover {
+    color: black;
+    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
+}
+
+#workspaces button {
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #00ff22; /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    margin: 5px 10px; /* Margen */
+    transition: background 0.3s ease; /* Transición suave para el fondo */
+}
+
+#workspaces button:hover {
+    color: black;
+    padding-left: 13px;
+    padding-right: 13px;
+    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
+}
+
+#waybar {
+    background: #000000;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 15px;
+    padding: 5px;
+}

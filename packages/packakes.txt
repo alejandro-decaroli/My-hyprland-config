@@ -21,6 +21,7 @@ intel-media-driver 24.3.3-1
 intel-ucode 20240910-1
 iwd 2.22-1
 kitty 0.36.2-1
+less 1:661-1
 libpulse 17.0-3
 libva-intel-driver 2.4.1-3
 libva-mesa-driver 1:24.2.3-1
@@ -50,6 +51,9 @@ snapd 2.65.1-1
 sof-firmware 2024.06-1
 swww 0.9.5-2
 tk 8.6.15-1
+ttf-fira-code 6.2-2
+ttf-firacode-nerd 3.2.1-2
+ttf-jetbrains-mono 2.304-2
 vim 9.1.0740-1
 vulkan-intel 1:24.2.3-1
 vulkan-radeon 1:24.2.3-1

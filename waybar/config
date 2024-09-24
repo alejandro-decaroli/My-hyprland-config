@@ -1,0 +1,44 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "width": 1600,
+    "height": 40,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "cpu",
+        "memory"
+    ],
+    "clock": {
+        "timezone": "America/Argentina/Buenos_Aires",
+        "interval": 1,
+        "format": "{:%H:%M:%S}"
+    },
+    "cpu": {
+        "format": "{usage}%"
+    },
+    "memory": {
+        "format": "{used}/{total}MB"
+    },
+    "hyprland/workspaces": {
+	    "format": "{name}: {icon}",
+	    "format-icons": {
+	    	"1": "",
+	    	"2": "",
+	    	"3": "",
+	    	"4": "",
+	    	"5": "",
+	    	"active": "",
+	    	"default": ""
+	    },
+	    "persistent-workspaces": {
+	    	"*": 5, 
+	    	"HDMI-A-1": 3 
+	    }
+}
+}
