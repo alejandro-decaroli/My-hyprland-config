@@ -1,65 +1,73 @@
 #clock {
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
-    font-size: 1.4em; /* Tamaño de fuente */
-    color: #c300ff; /* Color del texto */
-    padding: 5px; /* Espaciado interno */
-    margin: 5px 10px; /* Margen */
-    transition: background 0.3s ease; /* Transición suave para el fondo */
+    font-family: 'FiraCode Nerd Font'; 
+    font-size: 1.2em;
+    background-color: rgb(11, 0, 51);
+    color: rgb(234, 0, 255);   
+    padding: 10px; 
+    border-radius: 20px;
+    border: 2px solid aqua;
 }
-
-#clock:hover {
-    color: black;
-    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
-}
-
 
 #cpu {
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
-    font-size: 1.2em; /* Tamaño de fuente */
-    color: #fbff00; /* Color del texto */
-    padding: 5px; /* Espaciado interno */
-    margin: 5px 10px; /* Margen */
-    transition: background 0.3s ease; /* Transición suave para el fondo */
-}
-
-#cpu:hover {
-    color: black;
-    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
+    font-family: 'FiraCode Nerd Font';  
+    font-size: 1.2em; 
+    background-color: rgb(11, 0, 51);
+    color: rgb(255, 251, 0); 
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px; 
+    border: 2px solid aqua;
 }
 
 #memory {
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
-    font-size: 1.2em; /* Tamaño de fuente */
-    color: #fbff00; /* Color del texto */
-    padding: 5px; /* Espaciado interno */
-    margin: 5px 10px; /* Margen */
-    transition: background 0.3s ease; /* Transición suave para el fondo */
+    font-family: 'FiraCode Nerd Font'; 
+    font-size: 1.2em;  
+    background-color: rgb(11, 0, 51);
+    color: rgb(255, 251, 0); 
+    padding: 10px; 
+    border-radius: 20px;
+    margin-left: 20px;
+    border: 2px solid aqua;
 }
 
-#memory:hover {
-    color: black;
-    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
+#temperature {
+    font-family: 'FiraCode Nerd Font';
+    font-size: 1.2em; 
+    background-color: rgb(11, 0, 51);
+    color: rgb(255, 251, 0); 
+    padding: 10px; 
+    border-radius: 20px;
+    margin-left: 20px;
+    border: 2px solid aqua;
 }
+
+#custom-networkstatus {
+    padding: 10px;
+    background-color: rgb(11, 0, 51); 
+    border-radius: 20px; 
+    margin-left: 20px;
+    font-family: "FiraCode Nerd Font"; 
+    font-size: 1.2em; 
+    border: 2px solid aqua;
+    color: rgb(255, 251, 0);
+}
+
 
 #workspaces button {
-    font-family: 'Roboto', sans-serif; /* Cambia la fuente a Roboto */
-    font-size: 1.2em; /* Tamaño de fuente */
-    color: #00ff22; /* Color del texto */
-    padding: 5px; /* Espaciado interno */
-    margin: 5px 10px; /* Margen */
-    transition: background 0.3s ease; /* Transición suave para el fondo */
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'FiraCode Nerd Font'; 
+    font-size: 1.2em; 
+    color: rgb(0, 255, 0);
 }
 
-#workspaces button:hover {
-    color: black;
-    padding-left: 13px;
-    padding-right: 13px;
-    background: rgb(0, 183, 255); /* Fondo más oscuro al pasar el mouse */
-}
+#workspaces {
+    padding: 5px;
+    background-color: rgb(11, 0, 51);
+    border-radius: 20px;
+    border: 2px solid aqua;
+} 
 
 #waybar {
-    background: #000000;
-    border: 2px solid rgb(255, 0, 0);
-    border-radius: 15px;
-    padding: 5px;
+    background-color: rgba(255, 255, 255, 0);
 }

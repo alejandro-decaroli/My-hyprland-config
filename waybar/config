@@ -1,9 +1,9 @@
 {
     "layer": "top",
     "position": "top",
-    "margin-top": 5,
-    "width": 1600,
-    "height": 40,
+    "margin-top": 10,
+    "margin-bottom": 7,
+    "width": 1900,
     "modules-left": [
         "hyprland/workspaces"
     ],
@@ -11,24 +11,43 @@
         "clock"
     ],
     "modules-right": [
+        "temperature",
         "cpu",
-        "memory"
+        "memory",
+        "custom/networkstatus"
     ],
     "clock": {
         "timezone": "America/Argentina/Buenos_Aires",
         "interval": 1,
-        "format": "{:%H:%M:%S}"
+        "format": "{:%H:%M:%S %d-%m-%Y}"
     },
     "cpu": {
+        "interval": 1,
         "format": "{usage}%"
     },
     "memory": {
+        "interval": 1,
         "format": "{used}/{total}MB"
     },
+    "custom/temperature": {
+        "format": " {temp}°C", 
+        "max-length": 10,
+        "format-alt": "{temp}°C",
+        "tooltip": "Temperatura del CPU",
+        "tooltip-format": "CPU: {temp}°C",
+        "interval": 10,
+        "exec": "sensors | grep 'Core 0' | awk '{print $3}' | tr -d '+' | tr -d '°C'"
+    },
+    "custom/networkstatus": {
+        "exec": "ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo '󰤨 Conectado' || echo '󰤭 Desconectado'",
+        "interval": 10,
+        "format": "{}",
+        "tooltip": false
+    },
     "hyprland/workspaces": {
-	    "format": "{name}: {icon}",
+        "format": "{name}: {icon}",
 	    "format-icons": {
-	    	"1": "",
+            "1": "",
 	    	"2": "",
 	    	"3": "",
 	    	"4": "",
@@ -37,8 +56,8 @@
 	    	"default": ""
 	    },
 	    "persistent-workspaces": {
-	    	"*": 5, 
+            "*": 5, 
 	    	"HDMI-A-1": 3 
 	    }
-}
+    }
 }
