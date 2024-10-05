@@ -1,55 +1,68 @@
 #clock {
     font-family: 'FiraCode Nerd Font'; 
     font-size: 1.2em;
-    background-color: rgb(11, 0, 51);
-    color: rgb(234, 0, 255);   
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);   
     padding: 10px; 
     border-radius: 20px;
-    border: 2px solid aqua;
+  
+}
+
+/*background-color: rgb(11, 0, 51);
+    color: rgb(234, 0, 255);  */
+
+#custom-wlogout {
+    font-family: 'FiraCode Nerd Font'; 
+    font-size: 1.2em; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);  
+    padding: 10px; 
+    border-radius: 50px;
+    margin-left: 20px;
 }
 
 #cpu {
     font-family: 'FiraCode Nerd Font';  
     font-size: 1.2em; 
-    background-color: rgb(11, 0, 51);
-    color: rgb(255, 251, 0); 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);  
     border-radius: 20px;
     padding: 10px;
     margin-left: 20px; 
-    border: 2px solid aqua;
+
 }
 
 #memory {
     font-family: 'FiraCode Nerd Font'; 
     font-size: 1.2em;  
-    background-color: rgb(11, 0, 51);
-    color: rgb(255, 251, 0); 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);  
     padding: 10px; 
     border-radius: 20px;
     margin-left: 20px;
-    border: 2px solid aqua;
+
 }
 
 #temperature {
     font-family: 'FiraCode Nerd Font';
     font-size: 1.2em; 
-    background-color: rgb(11, 0, 51);
-    color: rgb(255, 251, 0); 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);  
     padding: 10px; 
     border-radius: 20px;
     margin-left: 20px;
-    border: 2px solid aqua;
+
 }
 
 #custom-networkstatus {
     padding: 10px;
-    background-color: rgb(11, 0, 51); 
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);  
     border-radius: 20px; 
     margin-left: 20px;
     font-family: "FiraCode Nerd Font"; 
-    font-size: 1.2em; 
-    border: 2px solid aqua;
-    color: rgb(255, 251, 0);
+    font-size: 1.0em; 
+
 }
 
 
@@ -58,14 +71,28 @@
     margin-right: 5px;
     font-family: 'FiraCode Nerd Font'; 
     font-size: 1.2em; 
-    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+/* Color de fondo para botones activos */
+#workspaces button.active {
+    background-color: rgb(225, 0, 255); /* Cambia este color según tu preferencia */
+    border-radius: 50px; /* Opcional: Ajusta el borde */
+    color: rgb(0, 0, 0); /* Opcional: Color del texto */
+}
+
+/* Color de fondo para botones en hover */
+#workspaces button:hover {
+    border-radius: 50px;
+    background-color: rgb(225, 0, 255); /* Cambia este color para hover */
+    color: rgb(0, 0, 0);
 }
 
 #workspaces {
     padding: 5px;
-    background-color: rgb(11, 0, 51);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    border: 2px solid aqua;
+
 } 
 
 #waybar {
