@@ -1,2 +1,2 @@
-# cyberpunk_hyprland
+# My hyprland
 Configuration theme
