@@ -1,7 +1,12 @@
 anydesk-bin 6.3.3-1
+gtkglext 1.2.0-20
+gtkglext-debug 1.2.0-20
 heroic-games-launcher 2.15.2-1
+slack-debug 3.0.3-1
 slack-desktop 4.41.96-1
 snapd 2.65.1-1
+waypaper 2.3-1
 wlogout 1.2.2-0
+wlogout-debug 1.2.2-0
 yay 12.4.2-1
 yay-debug 12.4.2-1
