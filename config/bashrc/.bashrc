@@ -1,4 +1,4 @@
-
+#
 # ~/.bashrc
 #
 
@@ -13,3 +13,4 @@ PS1='[\u@\h \W]\$ '
 if [ -f /usr/bin/neofetch ]; then
     neofetch
 fi
+

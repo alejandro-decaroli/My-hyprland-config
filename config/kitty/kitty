@@ -1,0 +1,12 @@
+background_opacity 0.9
+cursor #FFFFFF
+foreground #FFFFFF
+bold_foreground #DB0003 
+underline #3200DB
+selection_background #FFF28A
+selection_foreground #000000
+url_color #3200DB 
+font_family Fira Code
+font_size 12.0
+bold_font auto  # Usa la misma fuente pero en negrita
+enable_ligatures true

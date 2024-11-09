@@ -22,6 +22,7 @@ hyprland 0.44.1-2
 intel-media-driver 24.4.1-1
 intel-ucode 20241029-1
 iwd 3.0-1
+jdk-openjdk 23.0.1.u0-1
 kitty 0.37.0-1
 less 1:661-1
 libpulse 17.0-3
