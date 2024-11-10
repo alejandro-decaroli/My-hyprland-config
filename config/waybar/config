@@ -14,9 +14,20 @@
         "temperature",
         "cpu",
         "memory",
+        "pulseaudio",
         "custom/networkstatus",
         "custom/wlogout"
     ],
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "on-click-right": "pamixer -t",
+        "scroll-step": 5
+    },
     "clock": {
         "timezone": "America/Argentina/Buenos_Aires",
         "interval": 1,
