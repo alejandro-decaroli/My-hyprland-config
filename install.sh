@@ -35,6 +35,7 @@ check_config_folders() {
     WLOGOUT_CONFIG="$HOME/.config/wlogout"
     WAYBAR_CONFIG="$HOME/.config/waybar"
     KITTY_CONFIG="$HOME/.config/kitty"
+    ALACRITTY_CONFIG="$HOME/.config/alacritty"
     
     echo -e "${YELLOW}Verificando carpetas de configuración...${NC}"
     
@@ -49,6 +50,19 @@ check_config_folders() {
         fi
     else
         echo -e "${GREEN}La carpeta de Hyprland ya existe en $HYPR_CONFIG${NC}"
+    fi
+
+    # Verificar/crear carpeta de Alacritty
+    if [ ! -d "$ALACRITTY_CONFIG" ]; then
+        echo -e "${YELLOW}Creando carpeta de configuración para Alacritty...${NC}"
+        mkdir -p "$ALACRITTY_CONFIG"
+        # Crear archivo de configuración básico si no existe
+        if [ ! -f "$ALACRITTY_CONFIG/alacritty.toml" ]; then
+            echo -e "${GREEN}Creando archivo de configuración básico para Alacritty...${NC}"
+            touch "$ALACRITTY_CONFIG/alacritty.toml"
+        fi
+    else
+        echo -e "${GREEN}La carpeta de Alacritty ya existe en $HYPR_CONFIG${NC}"
     fi
     
     # Verificar/crear carpeta de Neofetch
@@ -70,7 +84,8 @@ check_config_folders() {
         # Crear archivo de configuración básico si no existe
         if [ ! -f "$WLOGOUT_CONFIG/config" ]; then
             echo -e "${GREEN}Creando archivo de configuración básico para Wlogout...${NC}"
-            touch "$WLOGOUT_CONFIG/config"
+            touch "$WLOGOUT_CONFIG/layout"
+            touch "$WLOGOUT_CONFIG/style.css"
         fi
     else
         echo -e "${GREEN}La carpeta de Wlogout ya existe en $WLOGOUT_CONFIG${NC}"

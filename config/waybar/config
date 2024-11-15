@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "margin-top": 10,
-    "margin-bottom": 7,
+    "margin-bottom": 5,
     "width": 1900,
     "modules-left": [
         "hyprland/workspaces"
@@ -11,9 +11,6 @@
         "clock"
     ],
     "modules-right": [
-        "temperature",
-        "cpu",
-        "memory",
         "pulseaudio",
         "custom/networkstatus",
         "custom/wlogout"
@@ -22,9 +19,13 @@
         "format": "{icon} {volume}%",
         "format-muted": "󰝟 Muted",
         "format-icons": {
-            "default": ["", "", ""]
+            "default": ["󰕿", "󰖀", "󰕾"],
+            "headphone": "󰋋"
         },
+        "tooltip": true,
+        "tooltip-format": "Volume: {volume}%\nDevice: {desc}",
         "on-click": "pavucontrol",
+        "on-click-middle": "pamixer --default-source -t",
         "on-click-right": "pamixer -t",
         "scroll-step": 5
     },
@@ -33,25 +34,8 @@
         "interval": 1,
         "format": "{:%H:%M:%S %d-%m-%Y}"
     },
-    "cpu": {
-        "interval": 1,
-        "format": "{usage}%"
-    },
-    "memory": {
-        "interval": 1,
-        "format": "{used}/{total}MB"
-    },
-    "custom/temperature": {
-        "format": " {temp}°C", 
-        "max-length": 10,
-        "format-alt": "{temp}°C",
-        "tooltip": "Temperatura del CPU",
-        "tooltip-format": "CPU: {temp}°C",
-        "interval": 10,
-        "exec": "sensors | grep 'Core 0' | awk '{print $3}' | tr -d '+' | tr -d '°C'"
-    },
     "custom/networkstatus": {
-        "exec": "ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo '󰤨 Conectado' || echo '󰤭 Desconectado'",
+        "exec": "ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo '󰤨' || echo '󰤭'",
         "interval": 10,
         "format": "{}",
         "tooltip": false
@@ -73,7 +57,7 @@
 	    }
     },
     "custom/wlogout": {
-      "exec": "echo  Logout",
+      "exec": "echo ",
       "return-type": "text",
       "interval": 3600,
       "on-click": "wlogout"

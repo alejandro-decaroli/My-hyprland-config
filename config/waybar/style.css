@@ -3,68 +3,55 @@
     font-size: 1.2em;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);   
-    padding: 10px; 
+    padding: 5px; 
     border-radius: 20px;
   
 }
 
-/*background-color: rgb(11, 0, 51);
-    color: rgb(234, 0, 255);  */
+#pulseaudio {
+    margin-right: 10px;
+    font-family: 'FiraCode Nerd Font'; 
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000000;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+#pulseaudio.muted {
+    background-color: #f53c3c;
+}
 
 #custom-wlogout {
+    background-color: #ffffff;
+    margin-right: 10px;
     font-family: 'FiraCode Nerd Font'; 
-    font-size: 1.2em; 
-    background-color: rgb(255, 255, 255);
+    font-size: 1.5em; 
     color: rgb(0, 0, 0);  
-    padding: 10px; 
-    border-radius: 50px;
-    margin-left: 20px;
-}
-
-#cpu {
-    font-family: 'FiraCode Nerd Font';  
-    font-size: 1.2em; 
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);  
-    border-radius: 20px;
-    padding: 10px;
-    margin-left: 20px; 
-
-}
-
-#memory {
-    font-family: 'FiraCode Nerd Font'; 
-    font-size: 1.2em;  
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);  
-    padding: 10px; 
-    border-radius: 20px;
-    margin-left: 20px;
-
-}
-
-#temperature {
-    font-family: 'FiraCode Nerd Font';
-    font-size: 1.2em; 
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);  
-    padding: 10px; 
-    border-radius: 20px;
-    margin-left: 20px;
-
+    border-radius: 50px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 14px;
+   
 }
 
 #custom-networkstatus {
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 12px;
     color: rgb(0, 0, 0);  
-    border-radius: 20px; 
-    margin-left: 20px;
+    background-color: #ffffff;
+    border-radius: 50px; 
     font-family: "FiraCode Nerd Font"; 
-    font-size: 1.0em; 
+    font-size: 1.5em; 
 
 }
-
 
 #workspaces button {
     margin-left: 5px;
@@ -75,17 +62,11 @@
 }
 
 /* Color de fondo para botones activos */
+
 #workspaces button.active {
-    background-color: rgb(225, 0, 255); /* Cambia este color según tu preferencia */
+    background-color: rgba(225, 0, 255, 0); /* Cambia este color según tu preferencia */
     border-radius: 50px; /* Opcional: Ajusta el borde */
     color: rgb(0, 0, 0); /* Opcional: Color del texto */
-}
-
-/* Color de fondo para botones en hover */
-#workspaces button:hover {
-    border-radius: 50px;
-    background-color: rgb(225, 0, 255); /* Cambia este color para hover */
-    color: rgb(0, 0, 0);
 }
 
 #workspaces {

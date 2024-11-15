@@ -1,0 +1,63 @@
+* {
+    font-family: "FiraCode Nerd Font", "Symbols Nerd Font"; /* Ya que tienes FiraCode instalada */
+}
+
+window {
+    background-color: rgba(17, 17, 27, 0.808);
+}
+
+button {
+    background-color: #1e1e2e;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #313244;
+    margin: 10px;
+    min-width: 150px;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+}
+
+button:hover {
+    background-color: #89b4fa;
+    border-color: #89b4fa;
+}
+
+/* Estilo para el texto de los botones */
+button label {
+    color: #cdd6f4;
+    font-size: 20px;          /* Texto más grande */
+    font-weight: bold;        /* Texto en negrita */
+    margin-top: 160px;
+}
+
+/* Cambio de color del texto al hover */
+button:hover label {
+    color: #1e1e2e;
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"));
+}
