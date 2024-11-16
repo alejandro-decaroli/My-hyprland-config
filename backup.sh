@@ -19,3 +19,10 @@ cp -f $HOME/.bashrc $actual_dir/config/bashrc
 
 pacman -Qe > $actual_dir/config/packages/pacman.txt
 yay -Qm > $actual_dir/config/packages/yay.txt
+
+cd 
+cd ..
+cd ..
+cd etc
+
+cp -f sddm.conf $actual_dir/config/sddm/sddm.conf 

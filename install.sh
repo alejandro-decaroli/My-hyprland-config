@@ -118,6 +118,23 @@ check_config_folders() {
     else
         echo -e "${GREEN}La carpeta de Kitty ya existe en $KITTY_CONFIG${NC}"
     fi
+
+    cd 
+
+    if [ ! -f ".Xresources" ]; then
+        echo -e "${YELLOW}Creando archivo de configuración básico para X...${NC}"
+        touch ".Xresources"
+    fi
+    
+    cd ..
+    cd ..
+    cd etc
+
+    if [ ! -f "sddm.conf" ]; then
+        echo -e "${YELLOW}Creando archivo de configuración básico para SDDM...${NC}"
+        touch "sddm.conf"
+    fi
+    SDDM_CONFIG=$pwd
 }
 
 
@@ -140,6 +157,7 @@ cp -f $actual_dir/config/kitty/kitty.conf $KITTY_CONFIG/kitty.conf
 cp -f $actual_dir/config/wlogout/config $WLOGOUT_CONFIG/config
 cp -f $actual_dir/config/neofetch/config.conf $NEOFETCH_CONFIG/config.conf
 cp -f $actual_dir/config/bashrc/.bashrc $HOME/.bashrc
+cp -f $actual_dir/config/sddm/sddm.conf $SDDM_CONFIG/sddm.conf
 
 echo "Activando Docker"
 sudo systemctl start docker
