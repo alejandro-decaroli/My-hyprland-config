@@ -11,3 +11,5 @@ Here are the keyboard shortcuts:
     SUPER + F = Firefox
     SUPER + C = Visual Studio Code
 
+In the preview folder, I’ve included some photos of how it currently looks. You can also find some images in the wallpaper folder for you to use.
+
