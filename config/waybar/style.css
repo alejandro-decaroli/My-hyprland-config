@@ -3,10 +3,26 @@
     font-size: 1.2em;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);   
-    padding: 5px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-radius: 20px;
   
 }
+
+#custom-waypaper {
+    margin-right: 10px;
+    font-family: "FiraCode Nerd Font";
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 17px;
+    padding-left: 10px;
+    color: #000000;
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
 
 #pulseaudio {
     margin-right: 10px;

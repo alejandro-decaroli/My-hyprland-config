@@ -11,10 +11,15 @@
         "clock"
     ],
     "modules-right": [
+        "custom/waypaper",
         "pulseaudio",
         "custom/networkstatus",
         "custom/wlogout"
     ],
+    "custom/waypaper": {
+        "format": "\uf03e",
+        "on-click": "waypaper --folder /home/alejandro/Imágenes --backend swww"
+    },
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-muted": "󰝟 Muted",
