@@ -5,7 +5,6 @@ base-devel 1-2
 bat 0.24.0-2
 btop 1.4.0-4
 btrfs-progs 6.11-1
-calcurse 4.8.1-2
 code 1.95.1-1
 conky 1.21.5-1
 docker 1:27.3.1-1
@@ -56,6 +55,7 @@ snapd 2.65.1-1
 sof-firmware 2024.09.1-1
 steam-native-runtime 1.0.0.75-4
 swww 0.9.5-2
+task 3.2.0-1
 tk 8.6.15-1
 tree 2.1.3-1
 ttf-fira-code 6.2-2
