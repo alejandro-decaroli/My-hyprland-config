@@ -36,6 +36,7 @@ check_config_folders() {
     WAYBAR_CONFIG="$HOME/.config/waybar"
     KITTY_CONFIG="$HOME/.config/kitty"
     ALACRITTY_CONFIG="$HOME/.config/alacritty"
+    WOFI_CONFIG="$HOME/.config/wofi"
     
     echo -e "${YELLOW}Verificando carpetas de configuración...${NC}"
     
@@ -50,6 +51,23 @@ check_config_folders() {
         fi
     else
         echo -e "${GREEN}La carpeta de Hyprland ya existe en $HYPR_CONFIG${NC}"
+    fi
+    
+    # Verificar/crear carpeta de Hyprland
+    if [ ! -d "$WOFI_CONFIG" ]; then
+        echo -e "${YELLOW}Creando carpeta de configuración para Wofi...${NC}"
+        mkdir -p "$WOFI_CONFIG"
+        # Crear archivo de configuración básico si no existe
+        if [ ! -f "$WOFI_CONFIG/style.css" ]; then
+            echo -e "${GREEN}Creando archivo de style.css para Wofi...${NC}"
+            touch "$WOFI_CONFIG/style.css"
+        fi
+        if [ ! -f "$WOFI_CONFIG/config" ]; then
+            echo -e "${GREEN}Creando archivo de config para Wofi...${NC}"
+            touch "$WOFI_CONFIG/config"
+        fi
+    else
+        echo -e "${GREEN}La carpeta de Wofi ya existe en $WOFI_CONFIG${NC}"
     fi
 
     # Verificar/crear carpeta de Alacritty

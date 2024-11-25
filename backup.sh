@@ -5,6 +5,7 @@ WLOGOUT_CONFIG="$HOME/.config/wlogout"
 WAYBAR_CONFIG="$HOME/.config/waybar"
 KITTY_CONFIG="$HOME/.config/kitty"
 ALACRITTY_CONFIG="$HOME/.config/alacritty"
+WOFI_CONFIG="$HOME/.config/wofi"
 
 
 cp -f $WAYBAR_CONFIG/config $actual_dir/config/waybar/config 
@@ -16,6 +17,8 @@ cp -f $WLOGOUT_CONFIG/layout $actual_dir/config/wlogout/layout
 cp -f $WLOGOUT_CONFIG/style.css $actual_dir/config/wlogout/style.css 
 cp -f $NEOFETCH_CONFIG/config.conf $actual_dir/config/neofetch/config
 cp -f $HOME/.bashrc $actual_dir/config/bashrc
+cp -f $WOFI_CONFIG/style.css $actual_dir/config/wofi/style.css
+cp -f $WOFI_CONFIG/config $actual_dir/config/wofi/config
 
 pacman -Qe > $actual_dir/config/packages/pacman.txt
 yay -Qm > $actual_dir/config/packages/yay.txt
