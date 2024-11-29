@@ -31,7 +31,7 @@ fi
 check_config_folders() {
     # Carpetas a verificar
     HYPR_CONFIG="$HOME/.config/hypr"
-    NEOFETCH_CONFIG="$HOME/.config/neofetch"
+    FASTFETCH_CONFIG="$HOME/.config/fastfetch"
     WLOGOUT_CONFIG="$HOME/.config/wlogout"
     WAYBAR_CONFIG="$HOME/.config/waybar"
     KITTY_CONFIG="$HOME/.config/kitty"
@@ -84,16 +84,16 @@ check_config_folders() {
     fi
     
     # Verificar/crear carpeta de Neofetch
-    if [ ! -d "$NEOFETCH_CONFIG" ]; then
-        echo -e "${YELLOW}Creando carpeta de configuración para Neofetch...${NC}"
-        mkdir -p "$NEOFETCH_CONFIG"
+    if [ ! -d "$FASTFETCH_CONFIG" ]; then
+        echo -e "${YELLOW}Creando carpeta de configuración para Fastfetch...${NC}"
+        mkdir -p "$FASTFETCH_CONFIG"
         # Crear archivo de configuración básico si no existe
-        if [ ! -f "$NEOFETCH_CONFIG/config.conf" ]; then
-            echo -e "${GREEN}Creando archivo de configuración básico para Neofetch...${NC}"
-            touch "$NEOFETCH_CONFIG/config.conf"
+        if [ ! -f "$FASTFETCH_CONFIG/config.jsonc" ]; then
+            echo -e "${GREEN}Creando archivo de configuración básico para Fastfetch...${NC}"
+            touch "$FASTFETCH_CONFIG/config.jsonc"
         fi
     else
-        echo -e "${GREEN}La carpeta de Neofetch ya existe en $NEOFETCH_CONFIG${NC}"
+        echo -e "${GREEN}La carpeta de Fastfetch ya existe en $FASTFETCH_CONFIG${NC}"
     fi
 
     if [ ! -d "$WLOGOUT_CONFIG" ]; then
@@ -123,18 +123,6 @@ check_config_folders() {
         fi
     else
         echo -e "${GREEN}La carpeta de Waybar ya existe en $WAYBAR_CONFIG${NC}"
-    fi
-
-    if [ ! -d "$KITTY_CONFIG" ]; then
-        echo -e "${YELLOW}Creando carpeta de configuración para Kitty...${NC}"
-        mkdir -p "$KITTY_CONFIG"
-        # Crear archivo de configuración básico si no existe
-        if [ ! -f "$KITTY_CONFIG/kitty.conf" ]; then
-            echo -e "${GREEN}Creando archivo de configuración básico para Kitty...${NC}"
-            touch "$KITTY_CONFIG/kitty.conf"
-        fi
-    else
-        echo -e "${GREEN}La carpeta de Kitty ya existe en $KITTY_CONFIG${NC}"
     fi
 
     cd 
@@ -173,7 +161,7 @@ cp -f $actual_dir/config/waybar/style.css $WAYBAR_CONFIG/style.css
 cp -f $actual_dir/config/hypr/hyprland.conf $HYPR_CONFIG/hyprland.conf
 cp -f $actual_dir/config/kitty/kitty.conf $KITTY_CONFIG/kitty.conf
 cp -f $actual_dir/config/wlogout/config $WLOGOUT_CONFIG/config
-cp -f $actual_dir/config/neofetch/config.conf $NEOFETCH_CONFIG/config.conf
+cp -f $actual_dir/config/fastfetch/config.jsonc $FASTFETCH_CONFIG/config.jsonc
 cp -f $actual_dir/config/bashrc/.bashrc $HOME/.bashrc
 cp -f $actual_dir/config/sddm/sddm.conf $SDDM_CONFIG/sddm.conf
 
