@@ -3,7 +3,8 @@
     "position": "top",
     "margin-top": 10,
     "margin-bottom": 5,
-    "width": 1900,
+    "width": 1850,
+    "height": 40,
     "modules-left": [
         "hyprland/workspaces"
     ],
@@ -11,6 +12,7 @@
         "clock"
     ],
     "modules-right": [
+        "custom/launcher",
         "custom/waypaper",
         "pulseaudio",
         "custom/networkstatus",
@@ -34,27 +36,33 @@
         "on-click-right": "pamixer -t",
         "scroll-step": 5
     },
+    "custom/launcher": {
+    "format": " Apps",
+    "on-click": "wofi --show drun",
+    "tooltip": false
+    },
     "clock": {
         "timezone": "America/Argentina/Buenos_Aires",
         "interval": 1,
         "format": "{:%H:%M:%S %d-%m-%Y}"
     },
     "custom/networkstatus": {
-        "exec": "ping -c 1 8.8.8.8 >/dev/null 2>&1 && echo '󰤨' || echo '󰤭'",
-        "interval": 10,
+        "exec": "~/.config/waybar/network.sh",
+        "interval": 2,
         "format": "{}",
-        "tooltip": false
+        "on-click": "nm-connection-editor",
+        "tooltip": true
     },
     "hyprland/workspaces": {
-        "format": "{name}: {icon}",
+        "format": "{name}",
 	    "format-icons": {
-            "1": "",
-	    	"2": "",
-	    	"3": "",
-	    	"4": "",
-	    	"5": "",
-	    	"active": "",
-	    	"default": ""
+            "1": "",
+	    	"2": "",
+	    	"3": "",
+	    	"4": "",
+	    	"5": "",
+	    	"active": "",
+	    	"default": ""
 	    },
 	    "persistent-workspaces": {
             "*": 5, 
@@ -67,7 +75,5 @@
       "interval": 3600,
       "on-click": "wlogout"
     }
-      
-      
 
-}
+} 

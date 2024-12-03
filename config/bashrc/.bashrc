@@ -13,4 +13,3 @@ PS1='[\u@\h \W]\$ '
 if [ -f /usr/bin/fastfetch ]; then
     fastfetch
 fi
-
