@@ -3,7 +3,7 @@
     "position": "top",
     "margin-top": 10,
     "margin-bottom": 5,
-    "width": 1850,
+    "width": 1900,
     "height": 40,
     "modules-left": [
         "hyprland/workspaces"
@@ -12,6 +12,7 @@
         "clock"
     ],
     "modules-right": [
+        "custom/config",
         "custom/launcher",
         "custom/waypaper",
         "pulseaudio",
@@ -19,8 +20,12 @@
         "custom/wlogout"
     ],
     "custom/waypaper": {
-        "format": "\uf03e",
+        "format": "\uf03e Images",
         "on-click": "waypaper --folder /home/alejandro/Imágenes --backend swww"
+    },
+    "custom/config": {
+        "format": "\uf013 Config",
+        "on-click": "alacritty -e nvim ~/.config/waybar/config"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",

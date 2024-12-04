@@ -1,19 +1,40 @@
 #clock {
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-family: 'FiraCode Nerd Font'; 
 }
 
 #custom-waypaper {
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
     font-family: "FiraCode Nerd Font";
   }
 
 #pulseaudio {
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 20px;
-    font-family: 'FiraCode Nerd Font'; 
+    font-family: 'FiraCode Nerd Font';
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px; 
 }
 
 #pulseaudio.muted {
     background-color: #f53c3c;
+}
+
+#custom-config {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+    font-family: 'FiraCode Nerd Font';
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px; 
 }
 
 #custom-wlogout {
@@ -22,13 +43,21 @@
 }
 
 #custom-launcher {
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 20px;
-    font-family: 'FiraCode Nerd Font'; 
+    font-family: 'FiraCode Nerd Font';
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px; 
 }
 
 #custom-networkstatus {
+    padding-left: 10px;
+    padding-right: 10px;
     margin-right: 20px;
-    font-family: 'FiraCode Nerd Font'; 
+    font-family: 'FiraCode Nerd Font';
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px; 
 }
 
 #workspaces button {
@@ -51,14 +80,14 @@
 
 #workspaces {
     color: #ffffff;
-    background-color: rgba(255, 0, 0, 0);
-    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
 
 } 
 
 #waybar {
     font-size: 20px;
     border-radius: 10px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
 }

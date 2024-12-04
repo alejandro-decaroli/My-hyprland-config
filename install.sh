@@ -121,6 +121,10 @@ check_config_folders() {
             echo -e "${GREEN}Creando archivo de estilo básico para Waybar...${NC}"
             touch "$WAYBAR_CONFIG/style.css"
         fi
+        if [ ! -f "$WAYBAR_CONFIG/network.sh" ]; then
+            echo -e "${GREEN}Creando archivo de network.sh para Waybar...${NC}"
+            touch "$WAYBAR_CONFIG/network.sh"
+        fi
     else
         echo -e "${GREEN}La carpeta de Waybar ya existe en $WAYBAR_CONFIG${NC}"
     fi
@@ -158,6 +162,7 @@ check_config_folders
 
 cp -f $actual_dir/config/waybar/config $WAYBAR_CONFIG/config
 cp -f $actual_dir/config/waybar/style.css $WAYBAR_CONFIG/style.css
+cp -f $actual_dir/config/waybar/network.sh $WAYBAR_CONFIG/network.sh
 cp -f $actual_dir/config/hypr/hyprland.conf $HYPR_CONFIG/hyprland.conf
 cp -f $actual_dir/config/kitty/kitty.conf $KITTY_CONFIG/kitty.conf
 cp -f $actual_dir/config/wlogout/config $WLOGOUT_CONFIG/config
