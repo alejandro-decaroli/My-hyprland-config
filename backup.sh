@@ -10,6 +10,7 @@ WOFI_CONFIG="$HOME/.config/wofi"
 cp -f $WAYBAR_CONFIG/config $actual_dir/config/waybar/config 
 cp -f $WAYBAR_CONFIG/style.css $actual_dir/config/waybar/style.css
 cp -f $WAYBAR_CONFIG/network.sh $actual_dir/config/waybar/network.sh
+cp -f $WAYBAR_CONFIG/config-menu.sh $actual_dir/config/waybar/config-menu.sh
 cp -f $HYPR_CONFIG/hyprland.conf $actual_dir/config/hypr/hyprland.conf
 cp -f $ALACRITTY_CONFIG/alacritty.toml $actual_dir/config/alacritty/alacritty.toml
 cp -f $WLOGOUT_CONFIG/layout $actual_dir/config/wlogout/layout 
