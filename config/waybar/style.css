@@ -1,6 +1,6 @@
 #clock {
     margin-right: 20px;
-    background-color: rgb(0, 0, 0);
+    background-color: #F27F1B;
     border-radius: 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -11,7 +11,7 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 20px;
-    background-color: rgb(0, 0, 0);
+    background-color: #F27F1B;
     border-radius: 25px;
     font-family: "FiraCode Nerd Font";
   }
@@ -21,7 +21,7 @@
     padding-right: 10px;
     margin-right: 20px;
     font-family: 'FiraCode Nerd Font';
-    background-color: rgb(0, 0, 0);
+    background-color: #F27F1B;
     border-radius: 25px; 
 }
 
@@ -34,11 +34,12 @@
     padding-right: 10px;
     margin-right: 20px;
     font-family: 'FiraCode Nerd Font';
-    background-color: rgb(0, 0, 0);
+    background-color: #F27F1B;
     border-radius: 25px; 
 }
 
 #custom-wlogout {
+    font-size: 25px;
     margin-right: 20px;
     font-family: 'FiraCode Nerd Font'; 
 }
@@ -48,7 +49,7 @@
     padding-right: 10px;
     margin-right: 20px;
     font-family: 'FiraCode Nerd Font';
-    background-color: rgb(0, 0, 0);
+    background-color: #F27F1B;
     border-radius: 25px; 
 }
 
@@ -57,22 +58,31 @@
     padding-right: 10px;
     margin-right: 20px;
     font-family: 'FiraCode Nerd Font';
-    background-color: rgb(0, 0, 0);
+    background-color: #F27F1B;
     border-radius: 25px; 
+}
+
+#workspaces button:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    font-family: 'FiraCode Nerd Font'; 
+    background-color: #7AB3BF;
+    color: rgb(0, 0, 0);
 }
 
 #workspaces button {
     margin-left: 5px;
     margin-right: 5px;
     font-family: 'FiraCode Nerd Font'; 
-    color: rgb(255, 255, 255);
+    color: #141F26;
 }
 
 /* Color de fondo para botones activos */
 
 #workspaces button.active {
     font-family: 'FiraCode Nerd Font'; 
-    background-color: rgb(58, 137, 255); /* Cambia este color según tu preferencia */
+    background-color: #7AB3BF; /* Cambia este color según tu preferencia */
     padding-left: 17px;
     padding-right: 17px;
     border-radius: 20px; /* Opcional: Ajusta el borde */
@@ -80,8 +90,8 @@
 }
 
 #workspaces {
-    color: #ffffff;
-    background-color: rgb(0, 0, 0);
+    color: #141F26;
+    background-color: #F27F1B;
     border-radius: 25px;
 
 } 
@@ -90,5 +100,5 @@
     font-size: 20px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: #141F26;
 }

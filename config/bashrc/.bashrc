@@ -10,6 +10,7 @@ alias grep='grep --color=auto'
 alias fzf='find . -type f | grep -v ".local" | fzf'
 PS1='[\u@\h \W]\$ '
 
+
 if [ -f /usr/bin/fastfetch ]; then
     fastfetch
 fi
