@@ -63,17 +63,17 @@
 }
 
 #workspaces button:hover {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 20px;
     font-family: 'FiraCode Nerd Font'; 
-    background-color: #7AB3BF;
-    color: rgb(0, 0, 0);
 }
 
 #workspaces button {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     font-family: 'FiraCode Nerd Font'; 
     color: #141F26;
 }
@@ -97,7 +97,7 @@
 } 
 
 #waybar {
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0);
     color: #141F26;
