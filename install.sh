@@ -175,15 +175,6 @@ cp -f $actual_dir/config/fastfetch/config.jsonc $FASTFETCH_CONFIG/config.jsonc
 cp -f $actual_dir/config/bashrc/.bashrc $HOME/.bashrc
 cp -f $actual_dir/config/sddm/sddm.conf $SDDM_CONFIG/sddm.conf
 
-echo "Activando Docker"
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo usermod -aG docker $USER
-
-echo "Activando Snapd"
-sudo systemctl start snapd
-sudo systemctl enable snapd
-
 echo "Instalación completada, reinicie la computadora para completar la instalación"
 
 reboot
