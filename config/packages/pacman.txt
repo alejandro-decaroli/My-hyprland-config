@@ -91,7 +91,7 @@ vim 9.1.0954-1
 visual-studio-code-bin 1.96.2-1
 vulkan-intel 1:24.3.2-1
 waybar 0.11.0-4
-waypaper 2.3-1
+waypaper 2.4-1
 wget 1.25.0-1
 wine 9.22-1
 wine-gecko 2.47.4-2
