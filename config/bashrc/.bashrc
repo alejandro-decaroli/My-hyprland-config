@@ -17,3 +17,6 @@ eval "$(pyenv init --path)"
 if [ -f /usr/bin/fastfetch ]; then
     fastfetch
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/alejandro/.lmstudio/bin"

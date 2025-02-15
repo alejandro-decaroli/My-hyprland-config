@@ -1,4 +1,5 @@
 anydesk-bin 6.3.3-1
+cava-debug 0.10.3-2
 gtkglext 1.2.0-20
 gtkglext-debug 1.2.0-20
 python-imageio 2.36.1-2
@@ -8,9 +9,10 @@ sddm-theme-sugar-candy-git r41.a1fae51-1
 slack-debug 3.0.3-1
 slack-desktop 4.41.105-1
 snapd 2.65.1-1
-visual-studio-code-bin 1.96.2-1
-visual-studio-code-bin-debug 1.96.2-1
+visual-studio-code-bin 1.97.0-1
+visual-studio-code-bin-debug 1.97.0-1
 waypaper 2.4-1
+whitesur-cursor-theme-git r13.c8759f1-1
 wlogout 1.2.2-0
 wlogout-debug 1.2.2-0
 yay 12.4.2-1
