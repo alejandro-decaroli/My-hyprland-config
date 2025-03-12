@@ -34,7 +34,6 @@ check_config_folders() {
     FASTFETCH_CONFIG="$HOME/.config/fastfetch"
     WLOGOUT_CONFIG="$HOME/.config/wlogout"
     WAYBAR_CONFIG="$HOME/.config/waybar"
-    KITTY_CONFIG="$HOME/.config/kitty"
     ALACRITTY_CONFIG="$HOME/.config/alacritty"
     WOFI_CONFIG="$HOME/.config/wofi"
     
@@ -125,20 +124,11 @@ check_config_folders() {
             echo -e "${GREEN}Creando archivo de network.sh para Waybar...${NC}"
             touch "$WAYBAR_CONFIG/network.sh"
         fi
-        if [ ! -f "$WAYBAR_CONFIG/config-menu.sh" ]; then
-            echo -e "${GREEN}Creando archivo de config-menu.sh para Waybar...${NC}"
-            touch "$WAYBAR_CONFIG/config-menu.sh"
-        fi
     else
         echo -e "${GREEN}La carpeta de Waybar ya existe en $WAYBAR_CONFIG${NC}"
     fi
 
     cd 
-
-    if [ ! -f ".Xresources" ]; then
-        echo -e "${YELLOW}Creando archivo de configuración básico para X...${NC}"
-        touch ".Xresources"
-    fi
     
     cd ..
     cd ..
@@ -169,7 +159,6 @@ cp -f $actual_dir/config/waybar/style.css $WAYBAR_CONFIG/style.css
 cp -f $actual_dir/config/waybar/network.sh $WAYBAR_CONFIG/network.sh
 cp -f $actual_dir/config/waybar/config-menu.sh $WAYBAR_CONFIG/config-menu.sh
 cp -f $actual_dir/config/hypr/hyprland.conf $HYPR_CONFIG/hyprland.conf
-cp -f $actual_dir/config/kitty/kitty.conf $KITTY_CONFIG/kitty.conf
 cp -f $actual_dir/config/wlogout/config $WLOGOUT_CONFIG/config
 cp -f $actual_dir/config/fastfetch/config.jsonc $FASTFETCH_CONFIG/config.jsonc
 cp -f $actual_dir/config/bashrc/.bashrc $HOME/.bashrc

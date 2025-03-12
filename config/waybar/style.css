@@ -1,104 +1,124 @@
 #clock {
-    margin-right: 20px;
-    background-color: #F27F1B;
-    border-radius: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-right: 35px;
     font-family: 'FiraCode Nerd Font'; 
+    padding: 5px;
+    color: #D95F18;
 }
 
-#custom-waypaper {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 20px;
-    background-color: #F27F1B;
-    border-radius: 25px;
-    font-family: "FiraCode Nerd Font";
-  }
-
 #pulseaudio {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 20px;
+    margin-right: 35px;
     font-family: 'FiraCode Nerd Font';
-    background-color: #F27F1B;
-    border-radius: 25px; 
+    padding: 5px;
+    color: #D95F18;
 }
 
 #pulseaudio.muted {
     background-color: #f53c3c;
 }
 
-#custom-config {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 20px;
-    font-family: 'FiraCode Nerd Font';
-    background-color: #F27F1B;
-    border-radius: 25px; 
-}
-
 #custom-wlogout {
-    font-size: 25px;
-    margin-right: 20px;
+    color: #ff0e0e;
+    margin-right: 25px;
+    font-size: 30px;
     font-family: 'FiraCode Nerd Font'; 
 }
 
-#custom-launcher {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 20px;
+#custom-networkstatus { 
+    padding: 5px;
+    color: #D95F18;
+    margin-right: 35px;
     font-family: 'FiraCode Nerd Font';
-    background-color: #F27F1B;
-    border-radius: 25px; 
-}
-
-#custom-networkstatus {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 20px;
-    font-family: 'FiraCode Nerd Font';
-    background-color: #F27F1B;
-    border-radius: 25px; 
-}
-
-#workspaces button:hover {
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 20px;
-    font-family: 'FiraCode Nerd Font'; 
-}
-
-#workspaces button {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    margin-right: 3px;
-    font-family: 'FiraCode Nerd Font'; 
-    color: #141F26;
-}
-
-/* Color de fondo para botones activos */
-
-#workspaces button.active {
-    font-family: 'FiraCode Nerd Font'; 
-    background-color: #7AB3BF; /* Cambia este color según tu preferencia */
-    padding-left: 17px;
-    padding-right: 17px;
-    border-radius: 20px; /* Opcional: Ajusta el borde */
-    color: rgb(0, 0, 0); /* Opcional: Color del texto */
 }
 
 #workspaces {
-    color: #141F26;
-    background-color: #F27F1B;
-    border-radius: 25px;
+    margin-left: 10px;
+    padding: 5px;
+    color: #D95F18;
+}
 
-} 
+#workspaces button {
+    font-family: 'FiraCode Nerd Font'; 
+    color: #6c7086;  /* Color gris para círculos inactivos */
+    border-radius: 50px;
+    padding: 0 5px;
+    margin: 0 3px;
+}
+
+#workspaces button.active {
+    color: #D95F18;  /* Color morado claro para el círculo activo */
+    background: transparent;
+    border: 0 solid transparent;
+}
+
+#workspaces button:hover {
+    color: #D95F18;  /* Color rosa claro al pasar el mouse */
+    background: transparent;
+    border: 0 solid transparent;
+}
 
 #waybar {
     font-size: 18px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0);
-    color: #141F26;
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border: 3px solid #D95F18;
+}
+
+#custom-launcher {
+    font-size: 22px;
+    margin-left: 25px;
+    font-family: 'FiraCode Nerd Font';
+    color: #00b7ff;
+}
+
+#memory {
+    color: #D95F18;
+    margin-right: 35px;
+    font-family: 'FiraCode Nerd Font';
+}
+
+#cpu {
+    color: #D95F18;
+    margin-right: 35px;
+    font-family: 'FiraCode Nerd Font';
+}
+
+#temperature {
+    color: #D95F18;
+    margin-right: 35px;
+    font-family: 'FiraCode Nerd Font';
+    transition: all 0.3s ease;
+}
+
+#temperature.critical {
+    color: #ff0000;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+#custom-waypaper {
+    color: #fffb00;
+    font-size: 22px;
+    margin-left: 25px;
+    margin-right: 10px;
+    font-family: "FiraCode Nerd Font";
+}
+
+#tray {
+    margin-right: 35px;
+    padding: 5px;
+    color: #D95F18;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
 }

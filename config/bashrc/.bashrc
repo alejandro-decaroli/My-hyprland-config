@@ -14,9 +14,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 
-if [ -f /usr/bin/fastfetch ]; then
+# Run fastfetch on terminal startup
+if command -v fastfetch >/dev/null 2>&1; then
     fastfetch
 fi
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/home/alejandro/.lmstudio/bin"
+
+
