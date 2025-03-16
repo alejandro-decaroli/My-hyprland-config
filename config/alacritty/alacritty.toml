@@ -2,7 +2,7 @@
 [window]
 padding = { x = 15, y = 15 }
 decorations = "none"
-opacity = 0.9
+opacity = 0.8
 
 # Configuración de fuente
 [font]

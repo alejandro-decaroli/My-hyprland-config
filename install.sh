@@ -36,6 +36,7 @@ check_config_folders() {
     WAYBAR_CONFIG="$HOME/.config/waybar"
     ALACRITTY_CONFIG="$HOME/.config/alacritty"
     WOFI_CONFIG="$HOME/.config/wofi"
+    SPF_CONFIG="$HOME/.config/superfile"
     
     echo -e "${YELLOW}Verificando carpetas de configuración...${NC}"
     
@@ -80,6 +81,19 @@ check_config_folders() {
         fi
     else
         echo -e "${GREEN}La carpeta de Alacritty ya existe en $HYPR_CONFIG${NC}"
+    fi
+
+    # Verificar/crear carpeta de Superfile
+    if [ ! -d "$SPF_CONFIG" ]; then
+        echo -e "${YELLOW}Creando carpeta de configuración para Superfile...${NC}"
+        mkdir -p "$SPF_CONFIG"
+        # Crear archivo de configuración básico si no existe
+        if [ ! -f "$SPF_CONFIG/config.toml" ]; then
+            echo -e "${GREEN}Creando archivo de configuración básico para Superfile...${NC}"
+            touch "$SPF_CONFIG/config.toml"
+        fi
+    else
+        echo -e "${GREEN}La carpeta de Superfile ya existe en $SPF_CONFIG${NC}"
     fi
     
     # Verificar/crear carpeta de Neofetch
@@ -161,6 +175,7 @@ cp -f $actual_dir/config/waybar/config-menu.sh $WAYBAR_CONFIG/config-menu.sh
 cp -f $actual_dir/config/hypr/hyprland.conf $HYPR_CONFIG/hyprland.conf
 cp -f $actual_dir/config/wlogout/config $WLOGOUT_CONFIG/config
 cp -f $actual_dir/config/fastfetch/config.jsonc $FASTFETCH_CONFIG/config.jsonc
+cp -f $actual_dir/config/spf/config.toml $SPF_CONFIG/config.toml
 cp -f $actual_dir/config/bashrc/.bashrc $HOME/.bashrc
 cp -f $actual_dir/config/sddm/sddm.conf $SDDM_CONFIG/sddm.conf
 

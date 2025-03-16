@@ -8,17 +8,14 @@
   "modules-left": [
     "custom/launcher",
     "custom/waypaper",
-    "hyprland/workspaces"
+    "tray"
   ],
   "modules-center": [
-    "clock"
+    "hyprland/workspaces"
   ],
   "modules-right": [
-    "tray",
+    "clock",
     "pulseaudio",
-    "memory",
-    "cpu",
-    "temperature",
     "custom/networkstatus",
     "custom/wlogout"
   ],
@@ -27,32 +24,13 @@
         "spacing": 10,
         "show-passive-items": true
   },
-  "memory": {
-        "interval": 5,
-        "format": "󰍛 {used:0.1f}GB",
-        "tooltip": true,
-        "tooltip-format": "Memory use: {used:0.1f}GB/{total:0.1f}GB"
-  },
-  "cpu": {
-      "interval": 5,
-      "format": "󰻠 {usage}%",
-      "tooltip": true,
-      "tooltip-format": "CPU usage: {usage}%"
-  },
-  "temperature": {
-    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
-    "critical-threshold": 80,
-    "format-critical": "󰸁 {temperatureC}°C",
-    "format": "󰔐 {temperatureC}°C",
-    "interval": 2
-  },
   "custom/waypaper": {
     "format": "\uf03e",
     "on-click": "waypaper --folder /home/alejandro/Imágenes --backend swww"
   },
   "custom/launcher": {
     "format": "",
-    "on-click": "wofi --show drun",
+    "on-click": "wofi --show drun --allow-images",
     "tooltip": false
   },
   "pulseaudio": {

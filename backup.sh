@@ -5,6 +5,7 @@ WLOGOUT_CONFIG="$HOME/.config/wlogout"
 WAYBAR_CONFIG="$HOME/.config/waybar"
 ALACRITTY_CONFIG="$HOME/.config/alacritty"
 WOFI_CONFIG="$HOME/.config/wofi"
+SPF_CONFIG="$HOME/.config/superfile"
 
 
 cp -f $WAYBAR_CONFIG/config $actual_dir/config/waybar/config 
@@ -18,6 +19,7 @@ cp -f $FASTFETCH_CONFIG/config.jsonc $actual_dir/config/fastfetch/config.jsonc
 cp -f $HOME/.bashrc $actual_dir/config/bashrc
 cp -f $WOFI_CONFIG/style.css $actual_dir/config/wofi/style.css
 cp -f $WOFI_CONFIG/config $actual_dir/config/wofi/config
+cp -f $SPF_CONFIG/config.toml $actual_dir/config/spf/config.toml
 
 pacman -Qe > $actual_dir/config/packages/pacman.txt
 yay -Qm > $actual_dir/config/packages/yay.txt

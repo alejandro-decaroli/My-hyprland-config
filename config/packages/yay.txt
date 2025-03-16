@@ -9,7 +9,9 @@ sddm-theme-sugar-candy-git r41.a1fae51-1
 slack-debug 3.0.3-1
 slack-desktop 4.41.105-1
 snapd 2.65.1-1
-visual-studio-code-bin 1.97.2-1
+superfile-bin 1.2.0.0-1
+superfile-bin-debug 1.2.0.0-1
+visual-studio-code-bin 1.98.1-1
 visual-studio-code-bin-debug 1.97.2-1
 warp-terminal v0.2025.02.26.08.02.stable_02-1
 waypaper 2.4-1

@@ -1,23 +1,42 @@
 window {
-    background-color: #1e1e1e;
+    background-color: rgba(0, 0, 0, 0.7);  /* Color negro con 70% de transparencia */
     border-radius: 20px;
-    color: white;
-    opacity: 0.90;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
 }
 
 entry {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);  /* Color negro con 70% de transparencia */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    color: #eee;
-    padding: 5px; /* Padding interno para cada entrada */
+    color: #eeeeee;
+    padding: 5px;
 }
 
-entry:selected {
-    background-color: #555;
-    color: #fff;
+/* Estilo para los elementos de la lista */
+#entry {
+    padding: 8px;
+    margin: 5px 0;
+    border: 2px solid transparent;
 }
 
-#img {
-    margin-right: 10px;
+#entry:selected {
+    background-color: transparent;
+    border: 2px solid #0088ff;
+    border-radius: 6px;
+}
+
+/* Estilo para la lista de aplicaciones */
+#inner-box {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Estilo para los elementos de la lista */
+#outer-box {
+    border: chocolate solid 2px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
 }
