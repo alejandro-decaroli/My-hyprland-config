@@ -53,7 +53,7 @@
     "format": "󱎫 {:%H:%M:%S | 󰸘 %A, %d %B }",
     "tooltip": true,
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "on-click": "gsimplecal"
+    "on-click": "gnome-calendar"
   },
   "custom/networkstatus": {
     "exec": "~/.config/waybar/network.sh",

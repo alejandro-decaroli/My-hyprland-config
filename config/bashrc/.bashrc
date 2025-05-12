@@ -19,5 +19,11 @@ if command -v fastfetch >/dev/null 2>&1; then
     fastfetch
 fi
 
+# fnm
+FNM_PATH="/home/alejandro/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "`fnm env`"
+fi
 
-
+. "$HOME/.cargo/env"
