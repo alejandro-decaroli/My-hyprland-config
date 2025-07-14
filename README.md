@@ -6,10 +6,11 @@ Here are the keyboard shortcuts:
     SUPER + Q = Terminal
     SUPER + W = Kill window
     SUPER + E = File explorer
+    SUPER + R = App Menu
     SUPER + D = Discord
     SUPER + S = Slack
     SUPER + F = Firefox
-    SUPER + C = Visual Studio Code
+    SUPER + C = Windsurf
 
 In the preview folder, I’ve included some photos of how it currently looks. You can also find some images in the wallpaper folder for you to use.
 

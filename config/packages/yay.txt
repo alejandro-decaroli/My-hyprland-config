@@ -1,8 +1,5 @@
-anydesk-bin 6.3.3-1
 cava-debug 0.10.3-2
-gtkglext 1.2.0-20
 gtkglext-debug 1.2.0-20
-heroic-games-launcher 2.16.1-1
 heroic-games-launcher-debug 2.16.1-1
 python-imageio-ffmpeg 0.5.1-2
 python-screeninfo 0.8.1-2
